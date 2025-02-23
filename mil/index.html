@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORY ACTIVITY #1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LABORATORY ACTIVITY #1</h1>
+        
+        <!-- Dog Section -->
+        <div class="section" id="dogSection">
+            <h2>Random Dog</h2>
+            <select id="dogBreed">
+                <option value="">Select Breed</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="poodle">Poodle</option>
+                <option value="labrador">Labrador</option>
+            </select>
+            <button onclick="getDog()">Get Random Dog</button>
+            <div id="dogImage"></div>
+        </div>
+
+        <!-- Cat Section -->
+        <div class="section" id="catSection">
+            <h2>Random Cat</h2>
+            <select id="catBreed">
+                <option value="">Select Breed</option>
+                <option value="bengal">Bengal</option>
+                <option value="persian">Persian</option>
+                <option value="maine_coon">Maine Coon</option>
+            </select>
+            <button onclick="getCat()">Get Random Cat</button>
+            <div id="catImage"></div>
+        </div>
+
+        <!-- Quotes Section -->
+        <div class="section" id="quoteSection">
+            <h2>Random Quote</h2>
+            <select id="quoteCategory">
+                <option value="friends">For Friends</option>
+                <option value="love">For Loved Ones</option>
+                <option value="strangers">For Strangers</option>
+                <option value="life">For Life</option>
+            </select>
+            <button onclick="getQuote()">Get Quote</button>
+            <p id="quoteText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
